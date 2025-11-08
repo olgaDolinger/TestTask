@@ -15,11 +15,15 @@ export const AddItem = ({ onClose, onConfirm }: AddItemProps) => {
     const [title, setTitle] = useState<string>(null)
     return (
         <BaseModal title="Add New Item" onClose={onClose} onConfirm={onConfirm}>
-            <>
-                <input type="text" placeholder="Task Title" onChange={(e) => setTitle(e.target.value)} />
-                <DropDown options={categoryList.map((category) => ({ id: category.id, label: category.name }))}
-                    onSelect={(option) => setCategory(option.label)} />
-            </>
+            <div className="flex flex-row items-center gap-4 w-full">
+                <div className="flex-1">Title:
+                    <input className="ml-2 px-2 py-1 border rounded w-full" type="text" placeholder="Task Title" onChange={(e) => setTitle(e.target.value)} />
+                </div>
+                <div className="flex-none">
+                    <DropDown options={categoryList.map((category) => ({ id: category.id, label: category.name }))}
+                        onSelect={(option) => setCategory(option.label)} />
+                </div>
+            </div>
         </BaseModal>
     )
 }
