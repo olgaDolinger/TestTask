@@ -2,27 +2,27 @@
     "data": [
         {
             "id": 1,
-            "name": "Category 1",
+            "label": "Category 1",
             "description": "Description for category 1."
         },
         {
             "id": 2,
-            "name": "Category 2",
+            "label": "Category 2",
             "description": "Description for category 2."
         },
         {
             "id": 3,
-            "name": "Category 3",
+            "label": "Category 3",
             "description": "Description for category 3."
         },
         {
             "id": 4,
-            "name": "Category 4",
+            "label": "Category 4",
             "description": "Description for category 4."
         },
         {
             "id": 5,
-            "name": "Category 5",
+            "label": "Category 5",
             "description": "Description for category 5."
         }
     ]
